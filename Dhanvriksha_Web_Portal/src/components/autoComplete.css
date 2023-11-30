@@ -1,0 +1,32 @@
+.autocomplete {
+    position: relative;
+}
+
+.AutoComp {
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='i bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat;
+    background-position: 96% 50%;
+}
+
+ .suggestions{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 24px;
+    background-color: #fff; 
+    font-size: 16px;
+    font-family: Arial;
+    z-index: 3;
+ }
+ .suggestions > li  {
+    margin: 5px 13px;
+    border-bottom:  1px solid rgb(223, 225, 229);
+    padding: 0 0 16px;
+    color: gray;
+    display: flex; 
+    padding: 4px 0px;
+ }
+ .suggestions > li:hover  {
+    background-color: #e3e3e0;
+  }

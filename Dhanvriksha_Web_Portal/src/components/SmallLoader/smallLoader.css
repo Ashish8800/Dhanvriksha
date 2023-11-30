@@ -1,0 +1,38 @@
+.Tlogoframe {
+    height: 20px;
+  }
+.Tloader {
+    align-self: center;
+    margin: 0 auto;
+    border: 5px solid #a3e3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+  .logo img {
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    animation: spinlogo 2s linear infinite;
+  }
+  @keyframes spin {
+   0% {
+     transform: rotate(0deg);
+   }
+
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+
+ @keyframes spinlogo {
+   0% {
+     transform: rotate(360deg);
+   }
+
+   100% {
+     transform: rotate(0deg);
+   }
+ } 

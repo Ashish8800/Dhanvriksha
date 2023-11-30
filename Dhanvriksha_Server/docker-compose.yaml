@@ -1,0 +1,13 @@
+version: "3"
+services:
+  backend:
+    container_name: dhan_backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # env_file:
+    #   - ./backend/.env
+    ports:
+      - "5001:5001"
+    environment:
+      MONGODB_URI: mongodb+srv://foodapp_user:7nSa6ur176DEDC6i@cluster0.ceysw.mongodb.net/dhanavriksha_pro_db?retryWrites=true&w=majority
