@@ -11,7 +11,7 @@ pipeline{
         stage("building the code"){
             steps{
                 echo "Building the Image"
-                sh "cd ${WORKSPACE} && docker build -t ghcr.io/ashish8800/dhan_backend:latest ."
+                sh "cd ${WORKSPACE}/Dhanvriksha_Server && docker build -t ghcr.io/ashish8800/dhan_backend:latest ."
             }
                        
         }    
