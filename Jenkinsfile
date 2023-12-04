@@ -27,12 +27,12 @@ pipeline{
             }
             
         }
-        stage("Deploy"){
-            steps{
-                echo "Deploying the Container"
-                sh "docker-compose down --rmi all && docker-compose up -d"
-            }
+        // stage("Deploy"){
+        //     steps{
+        //         echo "Deploying the Container"
+        //         sh "docker-compose down --rmi all && docker-compose up -d"
+        //     }
            
-        }
+        // }
     }
 }
